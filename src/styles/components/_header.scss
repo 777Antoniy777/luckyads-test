@@ -1,0 +1,5 @@
+.main-header {
+  .site-wrapper {
+    @include set-width(406px, $w-layout-mb);
+  }
+}

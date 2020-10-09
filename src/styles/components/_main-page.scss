@@ -1,0 +1,11 @@
+.main-page {
+  &__wrapper {
+    background-image:
+      url("../assets/images/bg.png"),
+      radial-gradient(152.33% 152.33% at 50% 50%, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+    background-size: cover, cover;
+    background-position: 0 0, 0 0;
+    background-repeat: no-repeat, no-repeat;
+    background-color: $c-desert-sand;
+  }
+}
