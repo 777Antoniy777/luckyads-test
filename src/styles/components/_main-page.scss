@@ -1,5 +1,6 @@
 .main-page {
   &__wrapper {
+    height: 100%;
     background-image: url("../assets/images/bg-mb.jpg");
     background-size: cover;
     background-position: 0 0;
@@ -8,7 +9,7 @@
 
     @media (min-width: $media-dt) {
       background-image: url("../assets/images/bg-dt.jpg");
-      background-size: contain;
+      background-position: center;
     }
   }
 }
