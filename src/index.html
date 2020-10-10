@@ -7,7 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="format-detection" content="telephone=no">
     <meta name="Description" content="Medicine shop">
-    <!-- <link href="./assets/fonts/Roboto-Light.woff2" as="font" rel="preload" crossorigin="anonymous"> -->
+    <link href="./assets/fonts/Inter-Regular.woff2" as="font" rel="preload" crossorigin="anonymous">
+    <link href="./assets/fonts/Inter-Bold.woff2" as="font" rel="preload" crossorigin="anonymous">
+    <link href="./assets/fonts/Inter-ExtraBold.woff2" as="font" rel="preload" crossorigin="anonymous">
+    <link href="./assets/fonts/Inter-Black.woff2" as="font" rel="preload" crossorigin="anonymous">
   </head>
 
   <body class="main-page">
@@ -35,20 +38,15 @@
                   <li class="product__item">Убивает все известные вирусы и микробы</li>
                   <li class="product__item">Защищает поверхности от микробов 48 часов</li>
                   <li class="product__item">Подходит<br> для любых поверхностей</li>
-
-                  <!-- <li class="product__item">Убивает все известные вирусы и микробы</li>
-                  <li class="product__item">Защищает поверхности от микробов 48 часов</li>
-                  <li class="product__item">Подходит<br> для любых поверхностей</li>
-                  <li class="product__item">Убивает все известные вирусы и микробы</li>
-                  <li class="product__item">Защищает поверхности от микробов 48 часов</li>
-                  <li class="product__item">Подходит<br> для любых поверхностей</li>
-                  <li class="product__item">Убивает все известные вирусы и микробы</li>
-                  <li class="product__item">Защищает поверхности от микробов 48 часов</li>
-                  <li class="product__item">Подходит<br> для любых поверхностей</li> -->
                 </ul>
 
                 <div class="product__image-wrapper">
-                  <img class="product__image" src="assets/images/product.png" width="176" height="388" alt="Дезинтекс">
+                  <picture>
+                    <source type="image/webp"
+                            srcset="assets/images/product@1x.webp 1x, assets/images/product@2x.webp 2x">
+                    <!-- 1х: 176px; 2x: 352px -->
+                    <img class="product__image" src="assets/images/product@1x.png" srcset="assets/images/product@2x.png 2x" width="176" height="388" alt="Дезинтекс">
+                  </picture>
                 </div>
               </div>
             </div>

@@ -1,15 +1,23 @@
 .main-page {
   &__wrapper {
     height: 100%;
-    background-image: url("../assets/images/bg-mb.jpg");
+    background-image: url("../assets/images/bg-mb@1x.jpg");
     background-size: cover;
     background-position: 0 0;
     background-repeat: no-repeat;
     background-color: $c-desert-sand;
 
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../assets/images/bg-mb@2x.jpg");
+    }
+
     @media (min-width: $media-dt) {
-      background-image: url("../assets/images/bg-dt.jpg");
+      background-image: url("../assets/images/bg-dt@1x.jpg");
       background-position: center;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../assets/images/bg-dt@2x.jpg");
+      }
     }
   }
 }
