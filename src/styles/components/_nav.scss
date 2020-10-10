@@ -1,0 +1,10 @@
+.nav {
+  &__logo {
+    margin: 0 auto;
+
+    @media (min-width: $media-dt) {
+      margin-left: 0;
+      transform: translate(-95px, -20px);
+    }
+  }
+}

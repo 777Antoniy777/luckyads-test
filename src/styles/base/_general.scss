@@ -15,7 +15,6 @@ body {
   display: flex;
   flex-direction: column;
   min-width: $media-mb;
-  height: 100%;
   margin: 0;
   font-weight: 400;
   font-style: normal;
@@ -24,6 +23,10 @@ body {
   font-family: $inter;
   color: $c-mine-shaft;
   overflow-x: hidden;
+
+  @media (min-width: $media-dt) {
+    height: 100%;
+  }
 }
 
 .site-wrapper {
@@ -37,7 +40,7 @@ body {
   }
 
   @media (min-width: $media-dt) {
-    @include set-width($w-site-wrapper-dt, $w-layout-dt);
+    width: 90%;
   }
 }
 

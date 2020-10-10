@@ -50,7 +50,7 @@ const createCSSLoader = (addLoader) => {
   return loader;
 };
 
-const createFileLoader = (fonts) => {
+const createFileLoader = (type) => {
   const loader = [
     {
       loader: 'file-loader',
@@ -60,7 +60,7 @@ const createFileLoader = (fonts) => {
     }
   ];
 
-  if (fonts) {
+  if (type === 'fonts') {
     loader[0].options.name = `[path][name].[ext]`;
   }
 
@@ -154,12 +154,12 @@ module.exports = {
         use: createCSSLoader('sass-loader'),
       },
       {
-        test: /\.(jpe?g|png|svg|gif)$/,
+        test: /\.(jpe?g|png|svg|gif|webp)$/,
         use: createFileLoader(),
       },
       {
         test: /\.(ttf|woff|woff2|eot)$/,
-        use: createFileLoader(true),
+        use: createFileLoader('fonts'),
       },
     ],
   },
