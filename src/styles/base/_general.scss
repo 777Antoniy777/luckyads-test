@@ -1,5 +1,4 @@
 html {
-  height: 100%;
   box-sizing: border-box;
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -23,10 +22,6 @@ body {
   font-family: $inter;
   color: $c-mine-shaft;
   overflow-x: hidden;
-
-  @media (min-width: $media-dt) {
-    height: 100%;
-  }
 }
 
 .site-wrapper {

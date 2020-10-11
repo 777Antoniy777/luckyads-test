@@ -58,13 +58,12 @@
     @media (min-width: $media-tb) {
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: flex-start;
       margin-bottom: 60px;
     }
 
     @media (min-width: $media-dt) {
       justify-content: space-between;
-      align-items: flex-start;
       margin-bottom: 0;
     }
   }
